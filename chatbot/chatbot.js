@@ -2,7 +2,6 @@
 const dialogflow = require("dialogflow");
 const structjson = require("./structjson.js");
 const config = require("../config/keys.js");
-const dialogflow = require("dialogflow");
 
 const {
   client_email,
