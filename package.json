@@ -9,11 +9,15 @@
   },
   "engines": {
     "node": "11.8.0",
-    "npm": "6.5.0"
+    "npm": "6.5.0gi"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "dialogflow": "^0.8.0"
   }
 }

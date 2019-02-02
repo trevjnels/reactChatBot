@@ -1,12 +1,14 @@
 const express = require("express");
+const bodyParser = require("body-parser");
+const dialogflow = require("dialogflow");
 
 const app = express();
+app.use(bodyParser.json());
 
-var PORT = process.env.PORT || 3000;
+require("./routes/dialogFlowRoutes")(app);
+//app will not be avaialbe in dialogflowroutes file
 
-app.get("/", (req, res) => {
-  res.send({ hello: "there" });
-});
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`app launched on port ${PORT}`);
