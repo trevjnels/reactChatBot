@@ -1,5 +1,4 @@
-const dialogflow = require("dialogflow");
-const config = require("../config/keys.js");
+"use strict";
 const chatbot = require("../chatbot/chatbot");
 
 // const sessionClient = new dialogflow.SessionsClient();
