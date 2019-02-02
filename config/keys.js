@@ -4,8 +4,8 @@ if (process.env.NODE_ENV === "production") {
     dialogFlowSessionID: process.env.DIALOG_FLOW_SESSION_ID,
     dialogFlorSessionLanguageCode:
       process.env.DIALOG_FLOW_SESSION_LANGUAGE_CODE,
-    googleClientEmail: process.env.GOOGLE_CLIENT_EMAIL,
-    googlePrivateKey: process.env.GOOGLE_PRIVATE_KEY
+    client_email: process.env.GOOGLE_CLIENT_EMAIL,
+    private_key: process.env.GOOGLE_PRIVATE_KEY
   };
 } else {
   const dialogflow = require("./development.json");
