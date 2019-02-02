@@ -2,11 +2,11 @@ const dialogflow = require("dialogflow");
 const config = require("../config/keys.js");
 const chatbot = require("../chatbot/chatbot");
 
-const sessionClient = new dialogflow.SessionsClient();
-const sessionPath = sessionClient.sessionPath(
-  config.googleProjectID,
-  config.dialogFlowSessionID
-);
+// const sessionClient = new dialogflow.SessionsClient();
+// const sessionPath = sessionClient.sessionPath(
+//   config.googleProjectID,
+//   config.dialogFlowSessionID
+// );
 
 module.exports = app => {
   app.get("/", (req, res) => {
