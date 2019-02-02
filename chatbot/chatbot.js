@@ -1,15 +1,15 @@
 "use strict";
 const dialogflow = require("dialogflow");
 const structjson = require("./structjson.js");
-const config = require("../config/keys.js");
+const config = require("../config/keys");
 
 const projectId = config.googleProjectID;
 const sessionId = config.dialogFlowSessionID;
 const languageCode = config.dialogFlowSessionLanguageCode;
 
 const credentials = {
-  client_email: config.client_email,
-  private_key: config.private_key
+  client_email: config.googleClientEmail,
+  private_key: config.googlePrivateKey
 };
 
 const sessionClient = new dialogflow.SessionsClient({ projectId, credentials });
