@@ -5,7 +5,7 @@ module.exports = {
 
   dialogFlowSessionLanguageCode: process.env.DIALOG_FLOW_SESSION_LANGUAGE_CODE,
 
-  googleClientEmail: JSON.parse(process.env.GOOGLE_CLIENT_EMAIL),
+  googleClientEmail: process.env.GOOGLE_CLIENT_EMAIL.toString(),
 
-  googlePrivateKey: JSON.parse(process.env.GOOGLE_PRIVATE_KEY)
+  googlePrivateKey: process.env.GOOGLE_PRIVATE_KEY.toString()
 };
