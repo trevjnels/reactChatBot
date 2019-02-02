@@ -18,6 +18,6 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
-    "dialogflow": "^0.8.0"
+    "nodemon": "^1.18.4"
   }
 }
